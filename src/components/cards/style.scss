@@ -1,0 +1,107 @@
+@import "../../assets/color.scss";
+
+.card-choice-container {
+    margin-bottom: 0.5rem;
+    .ant-card.ant-card-bordered {
+        border-radius: 25px;
+        background-color: $white;
+        .ant-card-body {
+            .card-content {
+                display: flex;
+                align-items: center;
+            }
+            .text-choice {
+                margin-left: 1rem;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.card-choice-container:hover {
+    cursor: pointer;
+    .ant-card.ant-card-bordered {
+        border: 2px dashed $blue-light;
+        .ant-card-body {
+            .text-choice {
+                color: $blue-light;
+            }
+        }
+    }
+
+}
+
+.card-choice-container.active {
+    margin-bottom: 0.5rem;
+    .ant-card.ant-card-bordered {
+        border-radius: 25px;
+        background-color: $blue;
+        .ant-card-body {
+            .card-content {
+                display: flex;
+                align-items: center;
+            }
+            .text-choice {
+                margin-left: 1rem;
+                font-size: 18px;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+    }
+}
+
+.card-choice-container.active:hover {
+    cursor: pointer;
+    .ant-card.ant-card-bordered {
+        border: 0px solid $blue-light;
+        .ant-card-body {
+            .text-choice {
+                color: $white;
+            }
+        }
+    }
+}
+
+.widget-card-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 280px;
+    .ant-card.ant-card-bordered {
+        height: 100%;
+        border-radius: 25px;
+        .ant-card-head {
+            border-bottom: 0
+        }
+        .ant-card-head-title {
+            padding-bottom: 0;
+            h1 {
+                margin-bottom: 0;
+            }
+        }
+        .ant-card-body {
+            padding-top: 0;
+            .cost {
+                span {
+                    font-size: 80px;
+                }
+            }
+            .volume {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-size: 30px;
+                    color: $grey;
+
+                }
+                .plus {
+                    color: $green
+                }
+                .minus {
+                    color: $red
+                }
+            }
+        }
+    }
+}
